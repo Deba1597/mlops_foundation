@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from typing import List
 
-HYPEN_E_DOT='-e .'
+# HYPEN_E_DOT='-e .'
 
 '''def get_requiremet(file_path:str)->List[str]:
     requirements = []
@@ -36,8 +36,6 @@ setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
-    install_requires=["scikit-learn","pandas","numpy"]
-    
+    install_requires=["scikit-learn","pandas","numpy"],
+    packages=find_packages()
 )
